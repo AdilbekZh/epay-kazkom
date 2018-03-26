@@ -18,4 +18,12 @@ return [
     'EPAY_FAILURE_POST_LINK'    => 'http://epay.kkb.kz/jsp/hbpay/pl.jsp',
 
     'EPAY_FORM_TEMPLATE'        => 'default.xsl',
+    
+    // Для теста
+    'TEST_MERCHANT_CERTIFICATE_ID'   => '00C182B189',
+    'TEST_MERCHANT_NAME'             => 'Demo Shop',
+    'TEST_PRIVATE_KEY_PATH'          => storage_path('app/certs/test/test_prv.pem');,
+    'TEST_PRIVATE_KEY_PASS'          => 'nissan',
+    'TEST_PUBLIC_KEY_PATH'           => storage_path('app/certs/test/kkbca.pem'),
+    'TEST_MERCHANT_ID'               => '92061101',
 ];
