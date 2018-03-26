@@ -148,13 +148,13 @@ class Epay
     }
 
     private function setTestParams()
-    {
-        $this->merchant_certificate_id  = '00C182B189';
-        $this->merchant_name            = 'Demo Shop';
-        $this->merchant_id              = '92061101';
-        $this->private_key_path         = __DIR__.'/certificates/test_prv.pem';
-        $this->private_key_pass         = 'nissan';
-        $this->public_key_path          = null;
+    {        
+        $this->merchant_certificate_id  = config('epay.TEST_MERCHANT_CERTIFICATE_ID');
+        $this->merchant_name            = config('epay.TEST_MERCHANT_NAME');
+        $this->merchant_id              = config('epay.TEST_MERCHANT_ID');
+        $this->private_key_path         = config('epay.TEST_PRIVATE_KEY_PATH');
+        $this->private_key_pass         = config('epay.TEST_PRIVATE_KEY_PASS');
+        $this->public_key_path          = config('epay.TEST_PUBLIC_KEY_PATH');
     }
 
     private function setProductionParams()
